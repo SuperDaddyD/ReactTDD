@@ -6,6 +6,8 @@ export default function Counter() {
   const [input, setInput] = useState(1);
   console.log(counterStyle["green"])
 
+
+
   const addToCounter = () => {
     setCounter(counter + input);
   };
@@ -17,7 +19,7 @@ export default function Counter() {
     <div>
       <h1 data-testid="header">My Counter</h1>
       <h2 data-testid="counter"
-      className={`${counter >= 100? counterStyle.green:""}${counter <=-100 ? counterStyle.red:""}` }
+      className={`${counter >=100 ? counterStyle.green:""}${counter <=-100 ? counterStyle.red:""}` }
       >
       {counter}
       </h2>
